@@ -2,52 +2,133 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Gerbil Sounds</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Gerbil Audio Library</title>
 
 <style>
+
 body{
-    font-family: Arial, sans-serif;
-    max-width:700px;
+    margin:0;
+    background:#f4f6f8;
+    font-family:Arial,Helvetica,sans-serif;
+    color:#333;
+}
+
+header{
+    background:#2d6a4f;
+    color:white;
+    padding:50px 20px;
+    text-align:center;
+}
+
+header h1{
+    margin:0;
+    font-size:2.2em;
+}
+
+header p{
+    margin-top:12px;
+    opacity:0.9;
+}
+
+.container{
+    max-width:800px;
     margin:40px auto;
     padding:20px;
 }
-h1{
-    text-align:center;
+
+.card{
+    background:white;
+    border-radius:12px;
+    padding:25px;
+    margin-bottom:25px;
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
 }
-.audio{
-    margin:30px 0;
+
+.card h2{
+    margin-top:0;
+    color:#2d6a4f;
 }
+
+.description{
+    color:#666;
+    margin-bottom:15px;
+}
+
 audio{
     width:100%;
 }
+
+footer{
+    text-align:center;
+    padding:40px;
+    color:#888;
+    font-size:14px;
+}
+
 </style>
 
 </head>
 
 <body>
 
-<h1>Gerbil Audio Recordings</h1>
+<header>
+    <h1>🐹 Gerbil Audio Library</h1>
+    <p>Scan the QR code and listen to the recordings below.</p>
+</header>
 
-<div class="audio">
-<h2>ADV1</h2>
-<audio controls>
-<source src="ADV1_Gerbil.wav" type="audio/wav">
-</audio>
+<div class="container">
+
+    <div class="card">
+        <h2>AFM</h2>
+        <p class="description">
+            Arched Frequency Modulated
+        </p>
+
+        <audio controls preload="none">
+            <source src="AFM.wav" type="audio/wav">
+        </audio>
+    </div>
+
+    <div class="card">
+        <h2>DFM</h2>
+        <p class="description">
+            Downward Frequency Modulated
+        </p>
+
+        <audio controls preload="none">
+            <source src="DFM.wav" type="audio/wav">
+        </audio>
+    </div>
+
+    <div class="card">
+        <h2>uSFM</h2>
+        <p class="description">
+            Upward Sinsusoidal Frequency Modulated
+        </p>
+
+        <audio controls preload="none">
+            <source src="uSFM.wav" type="audio/wav">
+        </audio>
+    </div>
+
+        <div class="card">
+        <h2>Drumming</h2>
+        <p class="description">
+            Drumming
+        </p>
+
+        <audio controls preload="none">
+            <source src="Drumming.wav" type="audio/wav">
+        </audio>
+    </div>
+
 </div>
 
-<div class="audio">
-<h2>ADV2</h2>
-<audio controls>
-<source src="ADV2_Gerbil.wav" type="audio/wav">
-</audio>
-</div>
-
-<div class="audio">
-<h2>Drumm</h2>
-<audio controls>
-<source src="Drumm_Gerbil.wav" type="audio/wav">
-</audio>
-</div>
+<footer>
+    © 2026 • Gerbil Audio Collection
+</footer>
 
 </body>
 </html>
