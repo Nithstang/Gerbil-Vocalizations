@@ -32,25 +32,40 @@ header p{
     opacity:0.9;
 }
 
-.container{
-    max-width:800px;
-    margin:40px auto;
-    padding:20px;
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
 }
 
 .card{
     background:white;
     border-radius:12px;
     padding:25px;
-    margin-bottom:25px;
+
     box-shadow:0 3px 12px rgba(0,0,0,.08);
 }
 
-.card h2{
-    margin-top:0;
-    color:#2d6a4f;
+.card {
+    background:white;
+    border-radius:12px;
+    padding:25px;
+
+    box-shadow:0 3px 12px rgba(0,0,0,.08);
+    height: 100%;
 }
 
+@media (max-width: 700px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+
+    
 .description{
     color:#666;
     margin-bottom:15px;
@@ -81,7 +96,7 @@ footer{
     color:white;
     border-radius:12px;
     padding:25px;
-    margin-bottom:25px;
+
     box-shadow:0 3px 12px rgba(0,0,0,.15);
 }
 
@@ -148,7 +163,7 @@ footer{
     <div class="card">
         <h2>uSFM</h2>
         <p class="description">
-            Upward Sinsusoidal Frequency Modulated
+            Upward Sinusoidal Frequency Modulated
             (Pitch reduced by 24 semitones)
         </p>
 
@@ -189,10 +204,10 @@ footer{
 
     <img src="Vocalizations_voc_both.gif" alt="Experimental design animation" class="experimental-gif">
     <p>
-        For each round, 3 parameters were calculated:
-        a) Entropy
-        b) Mutual Information
-        c) Coding Efficiency
+        For each round, 3 parameters were calculated:<br>
+        a) Entropy<br>
+        b) Mutual Information<br>
+        c) Coding Efficiency<br>
     </p>
         
 </div>
