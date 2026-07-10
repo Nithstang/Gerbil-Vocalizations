@@ -90,7 +90,16 @@ footer{
     border-radius:10px;
 }
 
+.poster-card{
+    grid-column: 1 / -1;   /* span the entire grid */
+}
 
+.poster-image{
+    width:100%;
+    display:block;
+    border-radius:10px;
+}
+    
 .experimental-card{
     background:#1f3b57;          /* different color (dark blue) */
     color:white;
@@ -233,18 +242,14 @@ footer{
 
     </div>
 
-        <div class="card">
-        <h2>Poster</h2>
-        <p class="description">
-            Kladisios and Felmy, FENS 2026
-        </p>
+<div class="card poster-card">
+    <h2>Poster</h2>
+    <p class="description">
+        Kladisios and Felmy, FENS 2026
+    </p>
 
-        <audio controls preload="none">
-            <source src="Poster_FENS_2026_Niko.png" type="image/png">
-        </audio>
-
-        <img src="Poster_FENS_2026_Niko.png" alt="Poster" class="vocal-image">    
-    </div>
+    <img src="Poster_FENS_2026_Niko.png" alt="Poster" class="poster-image">
+</div>
     
 </div>
 
